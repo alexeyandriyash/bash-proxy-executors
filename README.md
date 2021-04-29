@@ -53,7 +53,6 @@ source $SOMEPATH/mount-build-system.sh
 echo ">>>build started for $REPOROOT"
 
 $YARN install --frozen-lockfile
-$YARN generate:types
 $YARN build
 ```
 
