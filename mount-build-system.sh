@@ -33,7 +33,7 @@ fi
 #To stop execution in case file was sourced without set -e, i.e. to user session
 RETURN_ON_ERROR='eval if [[ $? > 0 ]]; then echo "RETURN_ON_ERROR >>> mount-build-system.sh:$LINENO <<< RETURN_ON_ERROR";return 1; fi'
 
-export BUILD_SYSTEM_PATH="$REPOROOT/ci/container-based-build-system"
+export BUILD_SYSTEM_PATH="$REPOROOT"
 
 source $BUILD_SYSTEM_PATH/common.sh
 $RETURN_ON_ERROR
@@ -45,7 +45,7 @@ $RETURN_ON_ERROR
 ENV_TO_BUILD=`generate-env-to-build-sequence "${requiredBuildParams[@]}"`
 $RETURN_ON_ERROR
 
-cbsRequiredParams=(CBS_CACHE_PATH ENV_TO_BUILD)
+cbsRequiredParams=(CBS_CACHE_PATH ENV_TO_BUILD DOCKER_REGISTRY OCP_NAMESPACE)
 check-input-params "${cbsRequiredParams[@]}"
 $RETURN_ON_ERROR
 
