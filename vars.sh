@@ -1,9 +1,5 @@
 #!/bin/bash
 
-#image config
-[[ -z $DOCKER_REGISTRY ]] && DOCKER_REGISTRY="local"
-[[ -z $OCP_NAMESPACE ]] && OCP_NAMESPACE="tech-vega"
-
 IMAGE_NAME="js-base"
 VERSION="1"
 
