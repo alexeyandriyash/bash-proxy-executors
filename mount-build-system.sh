@@ -25,7 +25,7 @@ then
   echo "==="
   echo "Configuration Error >>> parameter 'requiredBuildParams' must be set <<< Configuration Error"
   echo "==="
-  echo "EXAMPLE: 'export requiredBuildParams=(BASE_API_URL BASE_URL HOST_NAME YC_DEPLOYMENT VEGA_ENV VEGA_SCHEMA_PATH NPM_AUTH_TOKEN AUTH_TOKEN NPM_URI)'"
+  echo "EXAMPLE: 'export requiredBuildParams=(BASE_API_URL BASE_URL HOST_NAME NPM_AUTH_TOKEN AUTH_TOKEN NPM_URI)'"
   echo "Each build param must be also defined to build component"
   return 1;
 fi
