@@ -32,7 +32,6 @@ One-off container uses predefined docker image with already installed utilities.
 
 **And a one significant moment - `.npmrc` rollout**
 
-- default `.npmrc` does't exist anymore, it was .gitignor'ed 
 - `.npmrc` for a target build env will be generated
 
 **Example:**
