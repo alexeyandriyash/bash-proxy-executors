@@ -45,7 +45,7 @@ $RETURN_ON_ERROR
 ENV_TO_BUILD=`generate-env-to-build-sequence "${requiredBuildParams[@]}"`
 $RETURN_ON_ERROR
 
-cbsRequiredParams=(CBS_CACHE_PATH ENV_TO_BUILD DOCKER_REGISTRY OCP_NAMESPACE)
+cbsRequiredParams=(CACHE_PATH ENV_TO_BUILD DOCKER_REGISTRY OCP_NAMESPACE)
 check-input-params "${cbsRequiredParams[@]}"
 $RETURN_ON_ERROR
 
